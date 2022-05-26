@@ -1,0 +1,755 @@
+* {
+  background: #17351a;
+  margin: 0px;
+}
+
+.container {
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formulario {
+  height: 100%;
+}
+
+.web {
+  background: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movil {
+  display: none;
+}
+
+.botones {
+  background: black;
+  margin: 15px;
+}
+
+.logo {
+  height: 70px;
+  vertical-align: middle;
+}
+
+button {
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  background: #d7c100;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.menu {
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.menu a {
+  background: black;
+  text-decoration: none;
+  color: white;
+}
+
+.portada {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.cont {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  min-height: 500px;
+}
+
+.contenedor2 {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  min-height: 700px;
+}
+
+.texto-encima {
+  position: absolute;
+  background: black;
+  color: #d7c100;
+  width: 200px;
+  top: 100px;
+  right: 25px;
+  padding: 5px;
+}
+
+.titulo {
+  position: absolute;
+  color: #d7c100;
+  width: 200px;
+  top: 50px;
+  right: 25px;
+  padding: 5px;
+  background: none;
+}
+
+.biografia p {
+  font-size: 25px;
+  padding: 5px;
+  color: white;
+}
+
+.usuario {
+  background: black;
+  color: #d7c100;
+  padding: 5px;
+  font-style: oblique;
+}
+
+.titulo a {
+  background: none;
+  font-size: 30px;
+}
+
+footer {
+  background: black;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.iconos {
+  background: black;
+}
+
+.fa-instagram {
+  color: white;
+  background: black;
+  font-size: 20px;
+}
+
+.fa-instagram:hover {
+  color: #d7c100;
+}
+
+.fa-twitter {
+  color: white;
+  background: black;
+  font-size: 20px;
+}
+
+.fa-twitter:hover {
+  color: #d7c100;
+}
+
+.fa-facebook-f {
+  color: white;
+  background: black;
+  font-size: 20px;
+}
+
+.fa-facebook-f:hover {
+  color: #d7c100;
+}
+
+.contacto {
+  float: right;
+  color: #d7c100;
+  background: black;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.contacto:hover {
+  color: #d7c100;
+}
+
+.img {
+  width: 300px;
+}
+
+.imgg {
+  width: 300px;
+}
+
+.todo {
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px;
+}
+.personajes {
+  position: relative;
+  width: 30%;
+}
+
+.pers {
+  position: relative;
+  whidth: 30%;
+  padding: 20px;
+}
+
+.walter {
+  position: absolute;
+  bottom: 50px;
+  left: 150px;
+  font-size: 20px;
+  background: black;
+  color: #d7c100;
+  padding: 5px;
+  font-style: oblique;
+}
+
+.walterr {
+  position: absolute;
+  bottom: 50px;
+  left: 150px;
+  font-size: 20px;
+  background: black;
+  color: #d7c100;
+  padding: 5px;
+  font-style: oblique;
+}
+
+.jesse {
+  position: absolute;
+  bottom: 50px;
+  left: 145px;
+  font-size: 20px;
+  background: black;
+  color: #d7c100;
+  padding: 5px;
+  font-style: oblique;
+}
+
+.skyler {
+  position: absolute;
+  bottom: 50px;
+  left: 140px;
+  font-size: 20px;
+  background: black;
+  color: #d7c100;
+  padding: 5px;
+  font-style: oblique;
+}
+
+.saul {
+  position: absolute;
+  bottom: 50px;
+  left: 150px;
+  font-size: 20px;
+  background: black;
+  color: #d7c100;
+  padding: 5px;
+  font-style: oblique;
+}
+
+.jane {
+  position: absolute;
+  bottom: 50px;
+  left: 150px;
+  font-size: 20px;
+  background: black;
+  color: #d7c100;
+  padding: 5px;
+  font-style: oblique;
+}
+
+i {
+  font-size: 30px;
+}
+
+.mike {
+  position: absolute;
+  bottom: 50px;
+  left: 115px;
+  font-size: 20px;
+  background: black;
+  color: #d7c100;
+  padding: 5px;
+  font-style: oblique;
+}
+
+.titulo a {
+  color: #d7c100;
+}
+
+.ordenar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.biografia {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MODAL */
+
+.modal-contenido {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  bottom: 10%;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal1 {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  right: 35%;
+  bottom: 10%;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#miModal:target {
+  opacity: 0.9;
+  pointer-events: auto;
+}
+
+#miModal1:target {
+  opacity: 0.9;
+  pointer-events: auto;
+}
+
+#mi:target {
+  opacity: 0.9;
+  pointer-events: auto;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  margin: 20px;
+  text-decoration: none;
+  color: #d7c100;
+  font-size: 30px;
+}
+
+.panelnegrita {
+  margin: 20px;
+  text-decoration: none;
+  color: #d7c100;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main {
+  text-align: center;
+}
+
+main label {
+  flex-direction: row-reverse;
+  display: block;
+  padding: 10px;
+}
+
+.botonmodal {
+  background-color: #d7c100;
+  border-color: #000000;
+  margin-bottom: 20px;
+}
+
+.footermodal {
+  background-color: grey;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  background-color: grey;
+  color: #000000;
+  display: block;
+}
+
+.cerrar {
+  padding: 5px;
+  text-align: right;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fa-bars:before,
+.fa-navicon:before {
+  content: "\f0c9";
+  background: black;
+}
+
+@media (max-width: 480px) {
+  .web {
+    display: none;
+  }
+
+  .movil {
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .movil ul {
+    display: none;
+    width: 100%;
+    padding: 0px;
+  }
+
+  input:checked ~ ul {
+    display: block;
+  }
+  .movil input {
+    display: none;
+  }
+
+  .movil label {
+    color: white;
+    background: black;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80px;
+    height: auto;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movil li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    text-align: right;
+  }
+
+  .movil i {
+    width: auto;
+  }
+
+  .imgg {
+    width: 180px;
+  }
+
+  .biografia p {
+    font-size: 20px;
+  }
+
+  .walterr {
+    position: absolute;
+    bottom: 100px;
+    left: 86px;
+    font-size: 20px;
+    background: black;
+    color: #d7c100;
+    padding: 5px;
+    font-style: oblique;
+  }
+
+  .ordenar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background: white;
+  }
+
+  .botones {
+    background: white;
+  }
+
+  .web {
+    background: white;
+  }
+
+  .menu {
+    background: white;
+  }
+
+  .menu a {
+    background: white;
+    color: black;
+  }
+
+  .usuario {
+    background: white;
+    color: black;
+  }
+
+  footer {
+    background: white;
+  }
+
+  .contacto {
+    background: white;
+    color: black;
+  }
+
+  .iconos {
+    background: white;
+  }
+
+  .fa-instagram {
+    color: black;
+    background: white;
+    font-size: 20px;
+  }
+
+  .fa-twitter {
+    color: black;
+    background: white;
+    font-size: 20px;
+  }
+
+  .fa-facebook-f {
+    color: black;
+    background: white;
+    font-size: 20px;
+  }
+
+  * {
+    background: #f9fbeb;
+  }
+
+  .texto-encima {
+    background: white;
+    color: black;
+  }
+  .panel {
+    color: black;
+  }
+  .panelnegrita {
+    color: black;
+  }
+  .walter {
+    background: white;
+    color: black;
+  }
+  .jesse {
+    background: white;
+    color: black;
+  }
+  .skyler {
+    background: white;
+    color: black;
+  }
+  .saul {
+    background: white;
+    color: black;
+  }
+  .jane {
+    background: white;
+    color: black;
+  }
+  .mike {
+    background: white;
+    color: black;
+  }
+  .walterr {
+    background: white;
+    color: black;
+  }
+
+  .biografia p {
+    color: black;
+  }
+  .movil {
+    background: white;
+  }
+
+  .movil label {
+    background: white;
+    color: black;
+    border: none;
+  }
+  .fa-bars:before,
+  .fa-navicon:before {
+    content: "\f0c9";
+    background: white;
+  }
+}
+
+@media (max-width: 1000px) {
+  .modal1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 10%;
+    left: 28%;
+    right: 28%;
+    bottom: 10%;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .personajes {
+    position: relative;
+    width: 45%;
+  }
+
+  .modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    right: 25%;
+    bottom: 10%;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+@media (max-width: 660px) {
+  .personajes {
+    position: relative;
+    width: 95%;
+    text-align: center;
+  }
+
+  .modal1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    bottom: 10%;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 10%;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .biografia p {
+    font-size: 18px;
+  }
+
+  .imgg {
+    width: 250px;
+  }
+}
+
+/*CARRUSEL*/
+
+.slideshow-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+table thead {
+  background: #302b63;
+  color: white;
+}
+
+td {
+  color: white;
+}
+
+.todo {
+  margin: 0px;
+}
+
+#mainCaptcha {
+  background: white;
+  width: 20%;
+}
+
+#txtInput {
+  background: white;
+  width: 20%;
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */

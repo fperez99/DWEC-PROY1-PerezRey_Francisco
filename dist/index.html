@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Breaking Bad</title>
+    <link rel="stylesheet" href="/index.4d663569.css">
+    <script src="https://kit.fontawesome.com/7ea25b25fa.js" crossorigin="anonymous"></script>
+    <script src="/index.579125c3.js"></script>
+  </head>
+  <body>
+    <header class="container">
+      <img class="logo" src="/LogoBB.53a2fc0c.png" alt="Logo">
+      <div class="botones">
+        <a href="#miModal1"><button>Registrarse</button></a>
+        <a href="#miModal"><button>Iniciar Sesión</button></a>
+      </div>
+    </header>
+    <main class="contenedor">
+      <!--FORMULARIO DE INICIO DE SESION-->
+      <form id="formulario" onsubmit="validarFormulario()">
+        <div id="miModal" class="modal">
+          <div class="modal-contenido">
+            <a class="cerrar" href="/index.html">X</a>
+            <div class="login">
+              <a class="panelnegrita" href="#miModal">Entrar</a>
+              <a class="panel" href="#miModal1">Registrarse</a>
+            </div>
+            <div class="icon">
+              <i id="i" class="fas fa-user-alt"></i>
+            </div>
+            <label>
+              <input type="text" id="usuario" name="usuario" placeholder="Usuario">
+            </label>
+            <label>
+              <input type="text" id="contraseña" name="contraseña" placeholder="Contrseña">
+            </label>
+
+            <a href="#">
+              <button type="submit" class="botonmodal">Iniciar Sesión</button>
+            </a>
+
+            <a class="footermodal" href="" target="_blank">
+              Olvide mi contraseña
+            </a>
+          </div>
+        </div>
+      </form>
+
+      <!--FORMULARIO DE REGISTRO DE USUARIO-->
+      <form id="registro">
+        <div id="miModal1" class="modal1">
+          <div class="modal-contenido">
+            <a class="cerrar" href="/index.html">X</a>
+            <div class="login">
+              <a class="panel" href="#miModal">Entrar</a>
+              <a class="panelnegrita" href="#miModal1">Registrarse</a>
+            </div>
+
+            <label>
+              <input type="text" name="nombre" id="nombrecompleto" placeholder="Nombre">
+            </label>
+            <label>
+              <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+            </label>
+            <label>
+              <input type="text" name="correo" id="correo" placeholder="Correo">
+            </label>
+            <label>
+              <input type="date" name="edad" id="edad">
+            </label>
+            <label>
+              <input type="text" name="contraseña" id="contraseñaregistro" placeholder="Contraseña">
+            </label>
+
+            <label>
+              <input type="text" name="contraseña1" id="contraseñaregistro1" placeholder="Repita la contraseña">
+            </label>
+
+            <form onload="generateCaptcha();">
+              <table>
+                <tr>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" id="mainCaptcha" readonly="readonly">
+                    <input type="button" id="refresh" value="Refresh" onclick="generateCaptcha();">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" id="txtInput">
+                  </td>
+                </tr>
+                <tr>
+                  <td><span id="error" style="color: red"></span></td>
+                </tr>
+              </table>
+            </form>
+
+            <a href=""><button class="botonmodal" type="submit">Registrarse</button>
+            </a>
+          </div>
+        </div>
+      </form>
+
+      <!--MODAL DE CONTACTO-->
+      <div id="mi" class="modal1">
+        <div class="modal-contenido">
+          <a class="cerrar" href="/index.html">X</a>
+          <div class="panel">
+            <p>Formulario de Contacto</p>
+          </div>
+
+          <label>
+            <input type="text" name="nombre" placeholder="Tu Nombre">
+          </label>
+          <label>
+            <input type="text" name="apellidos" placeholder="Tu email">
+          </label>
+          <label>
+            <input type="text" name="correo" placeholder="Asunto">
+          </label>
+          <label>
+            <textarea name="" id="" cols="26" rows="8" placeholder=" Escriba su mensaje aqui"></textarea>
+          </label>
+
+          <a href=""><button class="botonmodal">Enviar</button></a>
+        </div>
+      </div>
+
+      <img class="portada" src="/Portada.cb5dab6a.jpg" alt="Portada">
+      <a hre="">
+        <h1 class="titulo">Breaking Bad</h1>
+      </a>
+      <p class="texto-encima">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ipsam, nam
+        praesentium, ut nobis quibusdam distinctio itaque quas rem maxime
+        aliquid! Ex alias delectus numquam officia consequatur velit
+        consectetur? Magnam.
+      </p>
+    </main>
+    <footer>
+      <main class="iconos">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+      </main>
+      <a href="#mi"><i class="contacto">Contacto</i></a>
+    </footer>
+  </body>
+</html>
