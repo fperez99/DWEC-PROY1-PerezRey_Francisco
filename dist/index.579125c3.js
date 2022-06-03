@@ -34,7 +34,7 @@ function validarRegistro(evento) {
     var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
     var string2 = removeSpaces(document.getElementById('txtInput').value);
     if (contraseñaregistro != contraseñaregistro1) alert("La contraseña no coincide");
-    if (edadverdadera >= 18) alert("Eres menor de edad");
+    if (edadverdadera < 18) alert("Eres menor de edad");
     if (string1 != string2) {
         document.getElementById('error').innerHTML = "Capchat Incorrecto";
         return true;
