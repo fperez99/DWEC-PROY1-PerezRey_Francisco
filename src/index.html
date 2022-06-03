@@ -149,35 +149,63 @@
       </form>
 
       <!--MODAL DE CONTACTO-->
-      <div id="mi" class="modal1">
-        <div class="modal-contenido">
-          <a class="cerrar" href="index.html">X</a>
-          <div class="panel">
-            <p>Formulario de Contacto</p>
+      <form id="registro">
+        <div id="mi" class="modal1">
+          <div class="modal-contenido">
+            <a class="cerrar" href="index.html">X</a>
+            <div class="panel">
+              <p>Formulario de Contacto</p>
+            </div>
+
+            <label>
+              <input type="text" name="nombre" placeholder="Tu Nombre" />
+            </label>
+            <label>
+              <input type="text" name="apellidos" placeholder="Tu email" />
+            </label>
+            <label>
+              <input type="text" name="correo" placeholder="Asunto" />
+            </label>
+            <label>
+              <textarea
+                name=""
+                id=""
+                cols="26"
+                rows="8"
+                placeholder=" Escriba su mensaje aqui"
+              ></textarea>
+            </label>
+            <form onload="generateCaptcha();">
+              <table>
+                <tr>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" id="mainCaptcha" readonly="readonly" />
+                    <input
+                      type="button"
+                      id="refresh"
+                      value="Refresh"
+                      onclick="generateCaptcha();"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" id="txtInput" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><span id="error" style="color: red"></span></td>
+                </tr>
+              </table>
+            </form>
+
+            <a href=""><button class="botonmodal">Enviar</button></a>
           </div>
-
-          <label>
-            <input type="text" name="nombre" placeholder="Tu Nombre" />
-          </label>
-          <label>
-            <input type="text" name="apellidos" placeholder="Tu email" />
-          </label>
-          <label>
-            <input type="text" name="correo" placeholder="Asunto" />
-          </label>
-          <label>
-            <textarea
-              name=""
-              id=""
-              cols="26"
-              rows="8"
-              placeholder=" Escriba su mensaje aqui"
-            ></textarea>
-          </label>
-
-          <a href=""><button class="botonmodal">Enviar</button></a>
         </div>
-      </div>
+      </form>
 
       <img class="portada" src="img/Portada.jpg" alt="Portada" />
       <a hre="">

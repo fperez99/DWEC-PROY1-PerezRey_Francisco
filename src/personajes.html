@@ -36,14 +36,51 @@
         <button class="btnAPI" value="Actualizar" onclick="location.reload()">
           Actualizar
         </button>
+        <input class="input" type="text" id="buscador" placeholder="Buscar" />
+        <button class="btnAPI" id="boton">Buscar</button>
       </div>
-
       <div id="contenedor"></div>
 
       <script>
         var boton = document.getElementById("btnPersonajes");
         var boton = document.getElementById("btnCapitulos");
         var posts = null;
+        //Buscador y boton
+        var buscador = document.getElementById("buscador");
+        var boton = document.getElementById("boton");
+
+        const filtar = () => {
+          let url = `https://www.breakingbadapi.com/api/characters?name=${buscador.value}`;
+          console.log(url);
+          fetch(url)
+            .then((data) => data.json())
+            .then((data) => {
+              posts = data;
+              mostrardatos(posts);
+              console.log(data);
+              console.log(data.name);
+            });
+        };
+
+        function mostrardatos(post) {
+          posts.map((post, i) => {
+            let name = document.createElement("p");
+            let nickname = document.createElement("p");
+            let date = document.createElement("p");
+            let ocupation = document.createElement("p");
+
+            name.innerHTML = "Personaje " + post.name;
+            nickname.innerHTML = "Nickname: " + post.status;
+            date.innerHTML = "Cumpleaños: " + post.date;
+            ocupation.innerHTML = "Ocupacion: " + post.occupation;
+
+            contenedor.appendChild(name);
+            contenedor.appendChild(nickname);
+            contenedor.appendChild(date);
+            contenedor.appendChild(ocupation);
+          });
+        }
+        boton.addEventListener("click", filtar);
 
         btnCapitulos.addEventListener("click", function () {
           fetch("https://www.breakingbadapi.com/api/episodes")
