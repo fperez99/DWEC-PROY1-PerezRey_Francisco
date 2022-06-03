@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (contraseñaregistro != contraseñaregistro1){
         alert("La contraseña no coincide")
     }
-    if(edadverdadera >= 18){
+    if(edadverdadera < 18){
       alert("Eres menor de edad")
     }
     if (string1 != string2){
