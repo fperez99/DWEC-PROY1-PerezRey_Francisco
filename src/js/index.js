@@ -47,16 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
     if(edadverdadera < 18){
       alert("Eres menor de edad")
     }
-    if ( !expr.test(correo) )
-        alert("Error: La dirección de correo " + correo + " es incorrecta.");
-    if (string1 != string2){
+    else if ( !expr.test(correo) ){
+      alert("Error: La dirección de correo " + correo + " es incorrecta.");
+    }    
+    else if (string1 != string2){
       document.getElementById('error').innerHTML = "Capchat Incorrecto"; 
              return true;
            }
-    if (nombre.length == 0 || apellidos.length == 0 ||correo.length == 0 || contraseñaregistro.length == 0 || contraseñaregistro1.length == 0 || string1.length == 0 || string2.length == 0 || edad.length == 0){
+    else if (nombre.length == 0 || apellidos.length == 0 ||correo.length == 0 || contraseñaregistro.length == 0 || contraseñaregistro1.length == 0 || string1.length == 0 || string2.length == 0 || edad.length == 0){
       alert("Campos sin rellenar")
     }
-    if (contraseñaregistro != contraseñaregistro1){
+    else if (contraseñaregistro != contraseñaregistro1){
       alert("La contraseña no coincide")
   }
     else{
