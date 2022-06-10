@@ -42,12 +42,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var edadverdadera = fecha_actual - anio;
     var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
     var string2 = removeSpaces(document.getElementById('txtInput').value);
-    if (contraseñaregistro != contraseñaregistro1){
-        alert("La contraseña no coincide")
-    }
+    expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    
     if(edadverdadera < 18){
       alert("Eres menor de edad")
     }
+    if ( !expr.test(correo) )
+        alert("Error: La dirección de correo " + correo + " es incorrecta.");
     if (string1 != string2){
       document.getElementById('error').innerHTML = "Capchat Incorrecto"; 
              return true;
@@ -55,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (nombre.length == 0 || apellidos.length == 0 ||correo.length == 0 || contraseñaregistro.length == 0 || contraseñaregistro1.length == 0 || string1.length == 0 || string2.length == 0 || edad.length == 0){
       alert("Campos sin rellenar")
     }
+    if (contraseñaregistro != contraseñaregistro1){
+      alert("La contraseña no coincide")
+  }
     else{
       alert("Registro hecho");
       location.href=('MenuPrincipal.html');
@@ -104,4 +108,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         slides[slideIndex - 1].style.display = "block";
         setTimeout(showSlides, 3000);
+}
+
+
+function generateCaptcha1(){
+  var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
+  var i;
+  for (i=0;i<4;i++){
+    var a = alpha[Math.floor(Math.random() * alpha.length)];
+    var b = alpha[Math.floor(Math.random() * alpha.length)];
+    var c = alpha[Math.floor(Math.random() * alpha.length)];
+    var d = alpha[Math.floor(Math.random() * alpha.length)];
+   }
+ var code = a + '' + b + '' + '' + c + '' + d;
+ document.getElementById("mainCaptcha1").value = code
+}
+
+function CheckValidCaptcha(){
+   var string1 = removeSpaces(document.getElementById('mainCaptcha1').value);
+   var string2 = removeSpaces(document.getElementById('txtInput1').value);
+   
+}
+
+/*CREAR NUEVO CAPCHAT*/
+function removeSpaces(string){
+ return string.split(' ').join('');
 }
